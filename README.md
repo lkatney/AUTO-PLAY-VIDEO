@@ -16,4 +16,6 @@ How to start:
 
     $ node server.js
 
-Open
+Open:
+
+http://localhost:5000/
