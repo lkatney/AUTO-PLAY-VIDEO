@@ -1,0 +1,25 @@
+{
+  "name": "Start-server-in-minutes",
+  "version": "0.0.1",
+  "description": "A very simple static file server to start in minutes",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lkatney/Start-Server-in-Minutes.git"
+  },
+  "author": "Lakshay Katney",
+  "bugs": {
+    "url": "https://github.com/lkatney/Start-Server-in-Minutes.git"
+  },
+  "homepage": "https://github.com/lkatney/Start-Server-in-Minutes.git",
+  "dependencies": {
+    "express": "^4.1.2",
+    "body-parser": "^1.1.2",
+    "errorhandler": "^1.0.1",
+    "method-override": "^1.0.0",
+	"html" : "^0.0.7"
+  }
+}
