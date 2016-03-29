@@ -19,3 +19,4 @@ How to start:
 Open:
 
 http://localhost:5000/
+# AUTO-PLAY-VIDEO
