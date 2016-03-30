@@ -3,10 +3,21 @@ jQuery(document).ready(function($) {
 
 
     $('.youtube-video').on('mouseenter', function(){
-        $(this).find("button").each( function( i, el ) {
+
+    	var mute = $(this).hasClass('muted');
+
+        $(this).find("button").each( function( i, el) {
             var elem = $( el );
             if(elem.attr("title") == 'Play'){
                 elem.click();
+            }
+
+            console.log(mute);
+
+            if(mute){
+	            if(elem.attr("title") == 'Mute'){
+	                elem.click();
+	            }
             }
         })
     }).on('mouseleave', function(){
@@ -19,16 +30,16 @@ jQuery(document).ready(function($) {
     });
 
     $('.html-video').each(function(i, obj) {
-        $(this).on("mouseover", function() { hoverVideo(i); });
-        $(this).on("mouseout", function() { hideVideo(i); });
+        $(this).on("mouseover", function() {  
+        	if($(this).hasClass('muted')){
+        		this.muted = true;
+        	}
+        	this.play();
+        });
+        $(this).on("mouseout", function() { 
+        	this.muted = false;
+        	this.pause();
+        });
     });
 
 });
-
-function hoverVideo(i) {  
-        $('.html-video')[i].play(); 
-}
-
-function hideVideo(i) {
-        $('.html-video')[i].pause(); 
-}
