@@ -23,7 +23,7 @@
         </div>
         <h3>AUTO PLAY VIDEO</h3>
         <div id="right">
-            <a class="mega-octicon octicon-mark-github" href="https://github.com/lkatney/ANY-JSON2HTML">
+            <a class="mega-octicon octicon-mark-github" href="https://github.com/lkatney/AUTO-PLAY-VIDEO">
                 <span>Github</span>
             </a>
             <a class="mega-octicon octicon-package" href="http://blog.lkatney.com/products">
@@ -34,14 +34,31 @@
         </div>
     </div>
 
+    <table>
+    <tr>
+    <td>
     <description>
         Youtube video using <a href="http://mediaelementjs.com/" class="link">MediaElementPlayer.js</a>
-        <small>MediaElementPlayer.js is a very good player library to run your Youtube, Vimeo videos even your raw video & audio files as well. It is very easy to use & easily configurable. Plus point is that it is absolutely free. This demo right now uses youtube video but you can run any video/audio file with this. Go to their documnetation for full description.</small>
     </description>
     <div class="video-section">
-		<video class="youtube-video" width="640" height="360" id="player1" preload="none">
-		    <source type="video/youtube" src="http://www.youtube.com/watch?v=nOEw9iiopwI" />
+		<video class="youtube-video" width="640" height="360" preload="none">
+		    <source type="video/youtube" src="https://www.youtube.com/watch?v=NKaA0IPcD_Q" />
 		</video>
 	</div>
+    </td>
+    <td>
+    <description>
+        Raw video using HTML5 & JavaScript
+    </description>
+    <div class="video-section">
+        <video class="html-video" width="640" height="360" controls="controls">
+            <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            <source src="http://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    </td>
+    </tr>
+    </table>
 	</body>
 </html>

@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-    $('video').mediaelementplayer();
+    $('.youtube-video').mediaelementplayer();
 
 
     $('.youtube-video').on('mouseenter', function(){
@@ -17,4 +17,18 @@ jQuery(document).ready(function($) {
             }
         })
     });
+
+    $('.html-video').each(function(i, obj) {
+        $(this).on("mouseover", function() { hoverVideo(i); });
+        $(this).on("mouseout", function() { hideVideo(i); });
+    });
+
 });
+
+function hoverVideo(i) {  
+        $('.html-video')[i].play(); 
+}
+
+function hideVideo(i) {
+        $('.html-video')[i].pause(); 
+}
